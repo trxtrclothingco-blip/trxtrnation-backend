@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Example Plumber Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Example Plumber</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Our Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Us</h1>
+        <p>With 25 years of experience, Example Plumber has been providing top-notch plumbing services to over 3000 happy customers. Our team of certified professionals is dedicated to solving your plumbing issues efficiently and reliably.</p>
+        <p>We started as a small family business and have grown into a trusted name in the industry, known for our quick response times and high-quality workmanship.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Example Plumber. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
